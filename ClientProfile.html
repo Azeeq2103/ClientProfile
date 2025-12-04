@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wan Cairel Aiman - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="#home">
+                <img src="logo.png" alt="Portfolio Logo" class="logo-image"> 
+                <span class="logo-text">Personal Portfolio</span> 
+            </a>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">&#9776;</button>
+        <nav>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="modeToggle" class="mode-toggle">Toggle Dark Mode</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero-wrapper">
+            
+            <div class="hero-text-container">
+                <h1 class="hero-title" data-text="Wan Cairel Aiman Bin Wan Habib">
+                    <span class="hero-greeting">Hello, I'm</span> 
+                    <br> 
+                    <span id="typewriter-text">WAN CAIREL AIMAN BIN WAN HABIB</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    <span class="highlight">Developer</span> | 
+                    <span class="highlight">Multimedia Computing</span> | 
+                    <span class="highlight">HTML, CSS, JS Specialist</span>
+                </p>
+
+                <p>My dream of becoming a programmer is rooted in my passion for <span class="highlight">Multimedia Computing</span>. I believe code is the most powerful tool for creative expression, allowing me to blend visual design and functional logic to build engaging digital experiences. I am driven to master development to turn complex ideas into accessible, beautiful, and clean web applications.</p>
+                
+                <a href="#projects" class="cta-button hero-cta">View My Work</a>
+            </div>
+
+            <div class="hero-media-container">
+                <video id="homeVideo" class="background-video" autoplay muted loop playsinline>
+                    <source src="bg1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+        </div>
+    </section>
+    
+    <main class="container">
+        
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+
+                <div class="project-card">
+                    <h3>UI/UX Design to Smart ART Apps</h3>
+                    <p>A collaborative project focusing on the User Interface and User Experience design for a mobile application related to the Sarawak Smart ART initiative. My team and I designed the complete interactive prototype, including key user flows and interaction buttons, using Figma.</p>
+                    <div class="project-cta-wrapper">
+                        <a href="https://www.figma.com/proto/htCs97OftbegXGDJkfGveF/Untitled?node-id=0-1&t=KWoOJqwK4isgHH5s-1" target="_blank" class="cta-button project-cta">Click the link &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Classic 2D Game Development (OpenGL)</h3>
+                    <p>Designed and programmed a classic-style 2D game using the OpenGL graphics library and C++. The project involved implementing core game loops, sprite rendering, collision detection, and user input to recreate the look and feel of old-day arcade titles.</p>
+                    <div class="project-cta-wrapper">
+                        <a href="2d.jpg" target="_blank" class="cta-button project-cta">View Screenshot &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Database System Design & Implementation</h3>
+                    <p>A collaborative project to design a robust database structure using MySQL and integrate it with a system built on XAMPP. Focused on secure data storage and retrieval for respondent data, emphasizing efficiency and integrity.</p>
+                    <div class="project-cta-wrapper">
+                        <a href="database.png" target="_blank" class="cta-button project-cta">View Screenshot &rarr;</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        <section id="about">
+            
+            <div class="about-card">
+                <h2>About Me</h2>
+
+                <p>My journey into programming isn't just a career choice; it's the realization of a childhood dream. From the moment I first saw how lines of code could create interactive worlds, I knew my path. This early passion led to a focused educational journey: I chose to study computer science starting in high school, continuing through my Diploma, and culminating in my current Bachelor's program in Multimedia Computing. Every step has been driven by the goal of mastering the tools needed to build the digital future.</p>
+
+                <p>I am a passionate web developer focused on creating accessible and efficient user experiences. My deep curiosity for how websites work led me to master the fundamentals: HTML for rock-solid structure, CSS for elegant design, and JavaScript for powerful interactivity.</p>
+                
+                <p>My background includes my focused studies in Computer Science through the Diploma and Bachelor's in Multimedia Computing programs, and I am constantly looking for new challenges to improve my clean code practices and understanding of web performance.</p>
+                
+                <h3>Skills</h3>
+                <ul>
+                    <li>Core Programming: C, C++, Java, Kotlin</li>
+                    <li>Web Development: HTML, CSS, JavaScript</li>
+                    <li>Game Development: Unity, Godot</li>
+                    <li>Mobile Development: Android Studio</li>
+                    <li>Design & Workflow: Responsive Design, Git Version Control</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <div class="contact-form">
+                <p>I'm available for new projects or collaboration. Feel free to send a message!</p>
+
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required aria-label="Your Name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required aria-label="Your Email Address">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required aria-label="Your Message"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="cta-button submit-button">Send Message</button>
+                    <p id="formFeedback" style="text-align: center; margin-top: 1rem;"></p>
+                </form>
+
+                <p style="text-align: center; margin-top: 2rem;">
+                    You can also email me directly at: 
+                    <a href="mailto:client@example.com" style="color: #00A693;">wancairel@example.com</a>
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 WAN CAIREL. Built with HTML, CSS, and Pure JavaScript.</p>
+    </footer>
+
+    <button id="scrollTopBtn" title="Go to top" aria-label="Scroll to top">&#8679;</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
